@@ -361,3 +361,23 @@ body {
     padding: 0 1rem; /* Add minimal padding for consistency */
   }
 }
+
+/* Contact section adjustments for smaller screens */
+@media (max-width: 800px) {
+  .contact-box {
+    width: 90%; /* Make the box fit within the screen */
+    padding: 1rem;
+    margin: 1rem auto;
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .contact-box-text,
+  .contact-box-text-2 {
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words wrap to the next line */
+    font-size: 1rem; /* Adjust font size for readability */
+    line-height: 1.4; /* Increase line spacing */
+  }
+}
